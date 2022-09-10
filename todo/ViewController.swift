@@ -60,25 +60,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-    func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-            try! realm.write {
-                let listItem = todoList[fromIndexPath.row]
-                todoList.remove(at: fromIndexPath.row)
-                todoList.insert(listItem, at: to.row)
-            }
-        }
-        func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-            return true
-        }
+//        func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+//           try! realm.write {
+//                let listItem = todoList[fromIndexPath.row]
+//                todoList.remove(at: fromIndexPath.row)
+//                todoList.insert(listItem, at: to.row)
+//            }
+//        }
+//        func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+//            return true
+//        }
         
         
-    }
-    extension List {
-        subscript (save index: Int) -> Element? {
-            if index < self.count {
-                return self[index]
-            } else {
-                return nil
-            }
-        }
+ //   }
+ //   extension List {
+  //      subscript (save index: Int) -> Element? {
+//            if index < self.count {
+ //               return self[index]
+//            } else {
+//                return nil
+ //           }
+  //      }
     }
