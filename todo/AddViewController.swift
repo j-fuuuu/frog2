@@ -8,47 +8,45 @@
 import UIKit
 import RealmSwift
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController , UITextFieldDelegate, UITextViewDelegate {
 
-    @IBOutlet var titleTextField: UITextField!
-    @IBOutlet var contentTextView: UITextView!
-    
     let realm = try! Realm()
+    
+    @IBOutlet var titleTextField: UITextField!
+    @IBOutlet var contentTextField: UITextField!
+    @IBOutlet var datePickerView: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let memo: Memo? = read()
+        //let memo: Memo? = read()
         
-        titleTextField.text = memo?.title
-        contentTextView.text = memo?.content
+        //titleTextField.text = memo?.title
+        //contentTextView.text = memo?.content
+        
+        titleTextField.delegate = self
+        contentTextField.delegate = self
 
         // Do any additional setup after loading the view.
     }
-    func read() -> Memo?{
+    func read() -> Memo? {
         return realm.objects(Memo.self).first
     }
         
     @IBAction func saveBotton(){
         let title: String = titleTextField.text!
-        let content: String = contentTextView.text!
+        let content: String = contentTextField.text!
+        //let date: String = datePickerView.date
         
-        let memo: Memo? = read()
-        
-        if memo != nil{
-            try! realm.write{
-                memo!.title = title
-                memo!.content = content
-            }
-        }else{
-            let newMemo = Memo()
+        let newMemo = Memo()
             newMemo.title = title
             newMemo.content = content
-            
+            //newMemo.date = date
+        
             try! realm.write{
                 realm.add(newMemo)
             }
-        }
+        
         //アラートを出す
         let alert: UIAlertController = UIAlertController(title: "保存", message: "メモの保存が完了しました", preferredStyle: .alert)
         
