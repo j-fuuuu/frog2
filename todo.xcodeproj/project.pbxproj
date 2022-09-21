@@ -17,6 +17,17 @@
 		BA5DE94528C6FBC400D19B42 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BA5DE94428C6FBC400D19B42 /* Realm */; };
 		BA5DE94728C6FBC400D19B42 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BA5DE94628C6FBC400D19B42 /* RealmSwift */; };
 		BA5DE94928C6FC7900D19B42 /* index.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5DE94828C6FC7900D19B42 /* index.swift */; };
+		BA86FBCF28DA5B16000C2B3A /* item1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBC528DA5B16000C2B3A /* item1.png */; };
+		BA86FBD028DA5B16000C2B3A /* item2.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBC628DA5B16000C2B3A /* item2.png */; };
+		BA86FBD128DA5B16000C2B3A /* item3.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBC728DA5B16000C2B3A /* item3.png */; };
+		BA86FBD228DA5B16000C2B3A /* item4.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBC828DA5B16000C2B3A /* item4.png */; };
+		BA86FBD328DA5B16000C2B3A /* item5.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBC928DA5B16000C2B3A /* item5.png */; };
+		BA86FBD428DA5B16000C2B3A /* frog4.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBCA28DA5B16000C2B3A /* frog4.png */; };
+		BA86FBD528DA5B16000C2B3A /* frog3.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBCB28DA5B16000C2B3A /* frog3.png */; };
+		BA86FBD628DA5B16000C2B3A /* frog2.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBCC28DA5B16000C2B3A /* frog2.png */; };
+		BA86FBD728DA5B16000C2B3A /* frog0.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBCD28DA5B16000C2B3A /* frog0.png */; };
+		BA86FBD828DA5B16000C2B3A /* frog1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBCE28DA5B16000C2B3A /* frog1.png */; };
+		BA91387528DA50A400F8BAD7 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA91387428DA50A400F8BAD7 /* homeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +41,17 @@
 		BA5DE93B28C6F54700D19B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA5DE94128C6F55300D19B42 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		BA5DE94828C6FC7900D19B42 /* index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = index.swift; sourceTree = "<group>"; };
+		BA86FBC528DA5B16000C2B3A /* item1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item1.png; sourceTree = "<group>"; };
+		BA86FBC628DA5B16000C2B3A /* item2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item2.png; sourceTree = "<group>"; };
+		BA86FBC728DA5B16000C2B3A /* item3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item3.png; sourceTree = "<group>"; };
+		BA86FBC828DA5B16000C2B3A /* item4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item4.png; sourceTree = "<group>"; };
+		BA86FBC928DA5B16000C2B3A /* item5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item5.png; sourceTree = "<group>"; };
+		BA86FBCA28DA5B16000C2B3A /* frog4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog4.png; sourceTree = "<group>"; };
+		BA86FBCB28DA5B16000C2B3A /* frog3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog3.png; sourceTree = "<group>"; };
+		BA86FBCC28DA5B16000C2B3A /* frog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog2.png; sourceTree = "<group>"; };
+		BA86FBCD28DA5B16000C2B3A /* frog0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog0.png; sourceTree = "<group>"; };
+		BA86FBCE28DA5B16000C2B3A /* frog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog1.png; sourceTree = "<group>"; };
+		BA91387428DA50A400F8BAD7 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +86,7 @@
 		BA5DE92C28C6F54600D19B42 /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				BA86FBC428DA5B16000C2B3A /* sozai */,
 				BA5DE92D28C6F54600D19B42 /* AppDelegate.swift */,
 				BA5DE92F28C6F54600D19B42 /* SceneDelegate.swift */,
 				BA5DE93128C6F54600D19B42 /* ViewController.swift */,
@@ -73,8 +96,26 @@
 				BA5DE93B28C6F54700D19B42 /* Info.plist */,
 				BA5DE94128C6F55300D19B42 /* AddViewController.swift */,
 				BA5DE94828C6FC7900D19B42 /* index.swift */,
+				BA91387428DA50A400F8BAD7 /* homeViewController.swift */,
 			);
 			path = todo;
+			sourceTree = "<group>";
+		};
+		BA86FBC428DA5B16000C2B3A /* sozai */ = {
+			isa = PBXGroup;
+			children = (
+				BA86FBC528DA5B16000C2B3A /* item1.png */,
+				BA86FBC628DA5B16000C2B3A /* item2.png */,
+				BA86FBC728DA5B16000C2B3A /* item3.png */,
+				BA86FBC828DA5B16000C2B3A /* item4.png */,
+				BA86FBC928DA5B16000C2B3A /* item5.png */,
+				BA86FBCA28DA5B16000C2B3A /* frog4.png */,
+				BA86FBCB28DA5B16000C2B3A /* frog3.png */,
+				BA86FBCC28DA5B16000C2B3A /* frog2.png */,
+				BA86FBCD28DA5B16000C2B3A /* frog0.png */,
+				BA86FBCE28DA5B16000C2B3A /* frog1.png */,
+			);
+			path = sozai;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +183,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA86FBD328DA5B16000C2B3A /* item5.png in Resources */,
+				BA86FBCF28DA5B16000C2B3A /* item1.png in Resources */,
+				BA86FBD728DA5B16000C2B3A /* frog0.png in Resources */,
+				BA86FBD628DA5B16000C2B3A /* frog2.png in Resources */,
+				BA86FBD028DA5B16000C2B3A /* item2.png in Resources */,
+				BA86FBD528DA5B16000C2B3A /* frog3.png in Resources */,
+				BA86FBD228DA5B16000C2B3A /* item4.png in Resources */,
+				BA86FBD128DA5B16000C2B3A /* item3.png in Resources */,
+				BA86FBD428DA5B16000C2B3A /* frog4.png in Resources */,
 				BA5DE93A28C6F54700D19B42 /* LaunchScreen.storyboard in Resources */,
+				BA86FBD828DA5B16000C2B3A /* frog1.png in Resources */,
 				BA5DE93728C6F54700D19B42 /* Assets.xcassets in Resources */,
 				BA5DE93528C6F54600D19B42 /* Main.storyboard in Resources */,
 			);
@@ -156,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5DE93228C6F54600D19B42 /* ViewController.swift in Sources */,
+				BA91387528DA50A400F8BAD7 /* homeViewController.swift in Sources */,
 				BA5DE92E28C6F54600D19B42 /* AppDelegate.swift in Sources */,
 				BA5DE94228C6F55300D19B42 /* AddViewController.swift in Sources */,
 				BA5DE94928C6FC7900D19B42 /* index.swift in Sources */,

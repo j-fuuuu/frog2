@@ -13,3 +13,8 @@ class Memo: Object {
     @objc dynamic var content: String = ""
     //@objc dynamic var date: String = ""
 }
+
+class Grow: Object {
+    @objc dynamic var character: String = ""
+    @objc dynamic var level = ""
+}
