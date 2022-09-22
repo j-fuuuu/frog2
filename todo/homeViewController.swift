@@ -11,7 +11,7 @@ import RealmSwift
 class homeViewController: UIViewController {
     
     let realm = try! Realm()
-    
+  
     //レベルを表示するラベル
     @IBOutlet var LevelLabel: UILabel!
     
@@ -26,10 +26,18 @@ class homeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let grow: Grow? = update()
+        
+        LevelLabel.text = grow?.level
+        //CharacterImageView.image = grow?.character
+
         // Do any additional setup after loading the view.
     }
     
-    
+   func update() -> Grow? {
+       return realm.objects(Grow.self).first
+    }
+
     //振り返るボタン
     @IBAction func FrogBotton() {
         
@@ -56,14 +64,21 @@ class homeViewController: UIViewController {
             
         }
         
-        let data = Grow()
-        data.level =  LevelLabel.text!
+        let uplevel: String = LevelLabel.text!
         
-        try! realm.write {
-            realm.Grow()
+        let grow: Grow? = update()
+        
+        if grow != nil {
+            try! realm.write {
+                grow!.level = uplevel
+            }
+        }else {
+            let Newupdate = Grow()
+            Newupdate.level = uplevel
             
+            try! realm.write {
+                realm.add(Newupdate)
+            }
         }
-        
-        
     }
 }

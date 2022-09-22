@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HachiMaruPop-Regular.ttf">
+            <string>HachiMaruPop-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="Phj-3h-Qnw">
@@ -17,42 +22,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="次のレベルまで残り：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZV-xA-2Ib">
-                                <rect key="frame" x="28" y="103" width="174" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="SfS-ie-280">
+                                <rect key="frame" x="0.0" y="-9" width="547" height="861"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="labelbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="3bq-Xf-Ow7">
+                                <rect key="frame" x="76" y="103" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="育て始めて" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZV-xA-2Ib">
+                                <rect key="frame" x="154" y="133" width="85" height="25"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNy-25-ViB">
-                                <rect key="frame" x="150" y="653" width="94" height="45"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frog0" translatesAutoresizingMaskIntoConstraints="NO" id="2fY-c0-MGc">
+                                <rect key="frame" x="121.66666666666669" y="350.66666666666669" width="150" height="151"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhX-1I-oZi">
+                                <rect key="frame" x="249" y="185" width="34" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="振り返る"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="０" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnz-6U-ZMa">
+                                <rect key="frame" x="154" y="166" width="85" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNy-25-ViB">
+                                <rect key="frame" x="0.0" y="645" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="filled" title="振り返りを書く">
+                                    <fontDescription key="titleFontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="15"/>
+                                    <color key="baseForegroundColor" red="0.26666668059999998" green="0.34901961679999999" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="FrogBotton" destination="Qoz-9z-SXD" eventType="touchUpInside" id="m9a-pm-L54"/>
                                     <segue destination="5Tu-9j-67A" kind="show" identifier="identifier" id="z9R-Fr-xMi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="０" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6X-VQ-jYL">
-                                <rect key="frame" x="210" y="103" width="90" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog0" translatesAutoresizingMaskIntoConstraints="NO" id="2fY-c0-MGc">
-                                <rect key="frame" x="97" y="290" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zRM-tL-foR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1ZV-xA-2Ib" firstAttribute="top" secondItem="zRM-tL-foR" secondAttribute="top" constant="30" id="2uv-mc-l94"/>
+                            <constraint firstItem="2fY-c0-MGc" firstAttribute="centerX" secondItem="XFL-GQ-if6" secondAttribute="centerX" id="990-bO-VMd"/>
+                            <constraint firstItem="2fY-c0-MGc" firstAttribute="centerY" secondItem="XFL-GQ-if6" secondAttribute="centerY" id="FrP-g6-rMP"/>
+                            <constraint firstItem="1ZV-xA-2Ib" firstAttribute="centerX" secondItem="XFL-GQ-if6" secondAttribute="centerX" id="qph-Mm-aPk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uZB-JV-87o"/>
                     <connections>
                         <outlet property="CharacterImageView" destination="2fY-c0-MGc" id="JU0-jq-8TM"/>
-                        <outlet property="LevelLabel" destination="R6X-VQ-jYL" id="Kmd-jZ-3wp"/>
+                        <outlet property="LevelLabel" destination="Vnz-6U-ZMa" id="BYs-5J-shx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJh-b2-6zL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -97,6 +125,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QC7-hf-Su0" kind="show" identifier="editMemo" id="ac0-1s-Rjm"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -113,6 +144,60 @@
             </objects>
             <point key="canvasLocation" x="1870.9923664122136" y="97.183098591549296"/>
         </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="Vfm-8x-nKa">
+            <objects>
+                <viewController id="QC7-hf-Su0" customClass="EditViewController" customModule="todo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wpg-TF-55M">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="jgy-GA-xAi">
+                                <rect key="frame" x="0.0" y="0.0" width="529" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhy-42-13K">
+                                <rect key="frame" x="179" y="170" width="34" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NA4-rT-5FB">
+                                <rect key="frame" x="179" y="390" width="34" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DHY-jf-bZD">
+                                <rect key="frame" x="52" y="240" width="288" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="age-yO-Xo2">
+                                <rect key="frame" x="52" y="443" width="288" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KTD-zE-Jb2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uds-c5-6dX"/>
+                    <connections>
+                        <outlet property="contentTextView" destination="age-yO-Xo2" id="xwF-BJ-gmi"/>
+                        <outlet property="titleTextField" destination="DHY-jf-bZD" id="JKp-SJ-hof"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4M-kJ-dJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2701.5267175572517" y="97.183098591549296"/>
+        </scene>
         <!--Add View Controller-->
         <scene sceneID="YnQ-Yz-eTd">
             <objects>
@@ -121,37 +206,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGA-bw-7ye">
-                                <rect key="frame" x="161" y="174" width="70" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-10-p8r">
+                                <rect key="frame" x="0.0" y="0.0" width="528" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGA-bw-7ye">
+                                <rect key="frame" x="170" y="173" width="53" height="24.666666666666657"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTa-5V-fit">
-                                <rect key="frame" x="161" y="341" width="70" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrB-jk-Mj0">
-                                <rect key="frame" x="38" y="230" width="316" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrB-jk-Mj0">
+                                <rect key="frame" x="80" y="227.66666666666666" width="233" height="33.999999999999972"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6EM-9Q-x3Y">
-                                <rect key="frame" x="38" y="389" width="316" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTa-5V-fit">
+                                <rect key="frame" x="179" y="361.66666666666669" width="35" height="24.666666666666686"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zcx-6F-Gmk">
+                                <rect key="frame" x="27" y="412.66666666666674" width="340" height="284.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HachiMaruPop-Regular" family="Hachi Maru Pop" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bo9-SQ-PbA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SGA-bw-7ye" firstAttribute="leading" secondItem="bo9-SQ-PbA" secondAttribute="leading" constant="170" id="1h0-ab-uE8"/>
+                            <constraint firstItem="SGA-bw-7ye" firstAttribute="top" secondItem="bo9-SQ-PbA" secondAttribute="top" constant="70" id="497-Pg-fX3"/>
+                            <constraint firstItem="bo9-SQ-PbA" firstAttribute="bottom" secondItem="zcx-6F-Gmk" secondAttribute="bottom" constant="72" id="Br1-i4-QNe"/>
+                            <constraint firstItem="bo9-SQ-PbA" firstAttribute="trailing" secondItem="PrB-jk-Mj0" secondAttribute="trailing" constant="80" id="Cv7-dN-fUO"/>
+                            <constraint firstItem="bo9-SQ-PbA" firstAttribute="trailing" secondItem="zcx-6F-Gmk" secondAttribute="trailing" constant="26" id="DUr-NF-QwU"/>
+                            <constraint firstItem="NTa-5V-fit" firstAttribute="top" secondItem="PrB-jk-Mj0" secondAttribute="bottom" constant="100" id="FJv-Xo-4VE"/>
+                            <constraint firstItem="SGA-bw-7ye" firstAttribute="centerX" secondItem="8mR-Ue-FoU" secondAttribute="centerX" id="GmR-2a-Mig"/>
+                            <constraint firstItem="NTa-5V-fit" firstAttribute="centerX" secondItem="8mR-Ue-FoU" secondAttribute="centerX" id="Ty0-WT-ULM"/>
+                            <constraint firstItem="zcx-6F-Gmk" firstAttribute="top" secondItem="NTa-5V-fit" secondAttribute="bottom" constant="26.329999999999998" id="XIm-2W-bUu"/>
+                            <constraint firstItem="PrB-jk-Mj0" firstAttribute="top" secondItem="SGA-bw-7ye" secondAttribute="bottom" constant="30" id="YE8-H8-iej"/>
+                            <constraint firstItem="zcx-6F-Gmk" firstAttribute="leading" secondItem="bo9-SQ-PbA" secondAttribute="leading" constant="27" id="bsH-nf-sAh"/>
+                            <constraint firstItem="PrB-jk-Mj0" firstAttribute="centerX" secondItem="8mR-Ue-FoU" secondAttribute="centerX" id="d2h-Ly-W1D"/>
+                            <constraint firstItem="bo9-SQ-PbA" firstAttribute="trailing" secondItem="NTa-5V-fit" secondAttribute="trailing" constant="179" id="kID-mi-y8m"/>
+                            <constraint firstItem="bo9-SQ-PbA" firstAttribute="trailing" secondItem="SGA-bw-7ye" secondAttribute="trailing" constant="170" id="kQs-ys-dyq"/>
+                            <constraint firstItem="NTa-5V-fit" firstAttribute="leading" secondItem="bo9-SQ-PbA" secondAttribute="leading" constant="179" id="uVa-Fp-BNg"/>
+                            <constraint firstItem="PrB-jk-Mj0" firstAttribute="leading" secondItem="bo9-SQ-PbA" secondAttribute="leading" constant="80" id="vil-1m-iUa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kes-wG-nyt">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ebQ-G6-nY8">
@@ -161,7 +264,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="contentTextView" destination="6EM-9Q-x3Y" id="k4m-T3-WFM"/>
+                        <outlet property="contentTextView" destination="zcx-6F-Gmk" id="awS-fQ-owX"/>
                         <outlet property="titleTextField" destination="PrB-jk-Mj0" id="K0J-aL-XR7"/>
                     </connections>
                 </viewController>
@@ -173,7 +276,11 @@
         <scene sceneID="bO6-8Q-ae6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wMP-WO-9Ci" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="振り返る" id="2z3-ws-OS1"/>
+                    <tabBarItem key="tabBarItem" title="振り返る" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="2z3-ws-OS1">
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZxZ-OK-AUV">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -192,7 +299,7 @@
         <scene sceneID="qxs-4W-vX3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Eq-uX-DjE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="一覧" id="GZu-d1-zkC"/>
+                    <tabBarItem key="tabBarItem" title="一覧" image="folder" catalog="system" id="GZu-d1-zkC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5TX-UK-8Rh">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -209,7 +316,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bg.png" width="1920" height="1080"/>
+        <image name="folder" catalog="system" width="128" height="96"/>
         <image name="frog0" width="150" height="151"/>
+        <image name="labelbg.png" width="1912" height="1080"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="80"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

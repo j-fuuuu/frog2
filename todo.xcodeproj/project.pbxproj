@@ -27,6 +27,12 @@
 		BA86FBD628DA5B16000C2B3A /* frog2.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBCC28DA5B16000C2B3A /* frog2.png */; };
 		BA86FBD728DA5B16000C2B3A /* frog0.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBCD28DA5B16000C2B3A /* frog0.png */; };
 		BA86FBD828DA5B16000C2B3A /* frog1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBCE28DA5B16000C2B3A /* frog1.png */; };
+		BA86FBDC28DC4F1D000C2B3A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86FBDB28DC4F1D000C2B3A /* File.swift */; };
+		BA86FBE028DC5BC0000C2B3A /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBDE28DC5BBF000C2B3A /* OFL.txt */; };
+		BA86FBE128DC5BC0000C2B3A /* HachiMaruPop-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBDF28DC5BBF000C2B3A /* HachiMaruPop-Regular.ttf */; };
+		BA86FBE328DC5EC4000C2B3A /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBE228DC5EC4000C2B3A /* bg.png */; };
+		BA86FBE528DC60B2000C2B3A /* labelbg.png in Resources */ = {isa = PBXBuildFile; fileRef = BA86FBE428DC60B2000C2B3A /* labelbg.png */; };
+		BA8A6FEF28DD142E00555E70 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A6FEE28DD142E00555E70 /* EditViewController.swift */; };
 		BA91387528DA50A400F8BAD7 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA91387428DA50A400F8BAD7 /* homeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +57,12 @@
 		BA86FBCC28DA5B16000C2B3A /* frog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog2.png; sourceTree = "<group>"; };
 		BA86FBCD28DA5B16000C2B3A /* frog0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog0.png; sourceTree = "<group>"; };
 		BA86FBCE28DA5B16000C2B3A /* frog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog1.png; sourceTree = "<group>"; };
+		BA86FBDB28DC4F1D000C2B3A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BA86FBDE28DC5BBF000C2B3A /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		BA86FBDF28DC5BBF000C2B3A /* HachiMaruPop-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HachiMaruPop-Regular.ttf"; sourceTree = "<group>"; };
+		BA86FBE228DC5EC4000C2B3A /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		BA86FBE428DC60B2000C2B3A /* labelbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = labelbg.png; sourceTree = "<group>"; };
+		BA8A6FEE28DD142E00555E70 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		BA91387428DA50A400F8BAD7 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +98,7 @@
 		BA5DE92C28C6F54600D19B42 /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				BA86FBDD28DC5BBF000C2B3A /* Hachi_Maru_Pop */,
 				BA86FBC428DA5B16000C2B3A /* sozai */,
 				BA5DE92D28C6F54600D19B42 /* AppDelegate.swift */,
 				BA5DE92F28C6F54600D19B42 /* SceneDelegate.swift */,
@@ -97,6 +110,8 @@
 				BA5DE94128C6F55300D19B42 /* AddViewController.swift */,
 				BA5DE94828C6FC7900D19B42 /* index.swift */,
 				BA91387428DA50A400F8BAD7 /* homeViewController.swift */,
+				BA86FBDB28DC4F1D000C2B3A /* File.swift */,
+				BA8A6FEE28DD142E00555E70 /* EditViewController.swift */,
 			);
 			path = todo;
 			sourceTree = "<group>";
@@ -104,6 +119,7 @@
 		BA86FBC428DA5B16000C2B3A /* sozai */ = {
 			isa = PBXGroup;
 			children = (
+				BA86FBE428DC60B2000C2B3A /* labelbg.png */,
 				BA86FBC528DA5B16000C2B3A /* item1.png */,
 				BA86FBC628DA5B16000C2B3A /* item2.png */,
 				BA86FBC728DA5B16000C2B3A /* item3.png */,
@@ -114,8 +130,18 @@
 				BA86FBCC28DA5B16000C2B3A /* frog2.png */,
 				BA86FBCD28DA5B16000C2B3A /* frog0.png */,
 				BA86FBCE28DA5B16000C2B3A /* frog1.png */,
+				BA86FBE228DC5EC4000C2B3A /* bg.png */,
 			);
 			path = sozai;
+			sourceTree = "<group>";
+		};
+		BA86FBDD28DC5BBF000C2B3A /* Hachi_Maru_Pop */ = {
+			isa = PBXGroup;
+			children = (
+				BA86FBDE28DC5BBF000C2B3A /* OFL.txt */,
+				BA86FBDF28DC5BBF000C2B3A /* HachiMaruPop-Regular.ttf */,
+			);
+			path = Hachi_Maru_Pop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA86FBE028DC5BC0000C2B3A /* OFL.txt in Resources */,
+				BA86FBE128DC5BC0000C2B3A /* HachiMaruPop-Regular.ttf in Resources */,
 				BA86FBD328DA5B16000C2B3A /* item5.png in Resources */,
 				BA86FBCF28DA5B16000C2B3A /* item1.png in Resources */,
 				BA86FBD728DA5B16000C2B3A /* frog0.png in Resources */,
@@ -192,7 +220,9 @@
 				BA86FBD228DA5B16000C2B3A /* item4.png in Resources */,
 				BA86FBD128DA5B16000C2B3A /* item3.png in Resources */,
 				BA86FBD428DA5B16000C2B3A /* frog4.png in Resources */,
+				BA86FBE328DC5EC4000C2B3A /* bg.png in Resources */,
 				BA5DE93A28C6F54700D19B42 /* LaunchScreen.storyboard in Resources */,
+				BA86FBE528DC60B2000C2B3A /* labelbg.png in Resources */,
 				BA86FBD828DA5B16000C2B3A /* frog1.png in Resources */,
 				BA5DE93728C6F54700D19B42 /* Assets.xcassets in Resources */,
 				BA5DE93528C6F54600D19B42 /* Main.storyboard in Resources */,
@@ -206,8 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8A6FEF28DD142E00555E70 /* EditViewController.swift in Sources */,
 				BA5DE93228C6F54600D19B42 /* ViewController.swift in Sources */,
 				BA91387528DA50A400F8BAD7 /* homeViewController.swift in Sources */,
+				BA86FBDC28DC4F1D000C2B3A /* File.swift in Sources */,
 				BA5DE92E28C6F54600D19B42 /* AppDelegate.swift in Sources */,
 				BA5DE94228C6F55300D19B42 /* AddViewController.swift in Sources */,
 				BA5DE94928C6FC7900D19B42 /* index.swift in Sources */,

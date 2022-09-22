@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class AddViewController: UIViewController , UITextFieldDelegate, UITextViewDelegate {
+class AddViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
 
     let realm = try! Realm()
     var datePicker: UIDatePicker = UIDatePicker()
